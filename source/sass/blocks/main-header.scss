@@ -1,0 +1,27 @@
+.main-header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font: 26px/1 "Bebas Neue Bold", sans-serif;
+
+  &__phone:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and(max-width: $tablet-width) {
+  .main-header {
+    padding-top: 40px;
+  }
+}
+
+@media screen and(max-width: $mobile-width) {
+  .main-header {
+    padding-top: 20px;
+    font-size: 20px;
+
+    .site-logo svg{
+      width: 65px;
+    }
+  }
+}
