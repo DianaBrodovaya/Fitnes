@@ -16,4 +16,18 @@ for (let anchor of anchors) {
   })
 }
 
+/*Прячем элемент на маленьких экранах*/
+let hiddenElement = document.querySelector('.js-mobile-hidden');
+
+function windowResize () {
+  if (document.body.clientWidth < 1200) {
+    hiddenElement.style.display="none";
+  } else if (document.body.clientWidth >= 1200) {
+    hiddenElement.style.display="block";
+  }
+}
+
+window.addEventListener('resize', windowResize);
+
+windowResize();
 

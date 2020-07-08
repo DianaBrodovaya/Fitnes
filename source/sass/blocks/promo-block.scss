@@ -9,12 +9,12 @@
 
   &__text {
     direction: rtl;
-    padding-right: 58px;
+    padding-right: 76px;
     padding-top: 110px;
     width: 480px;
   }
 
-  .header-wrapper {
+  .title-wrapper {
     position: relative;
 
     ul {
@@ -59,6 +59,7 @@
 
     h2 {
       margin-bottom: 5px;
+      font-size: 34px;
     }
 
     &__img {
@@ -69,7 +70,7 @@
       }
     }
 
-    .header-wrapper {
+    .title-wrapper {
 
       ul {
         font-size: 14px;
@@ -92,7 +93,7 @@
   .promo-block {
     justify-content: center;
     padding-top: 66px;
-    padding-bottom: 83px;
+    padding-bottom: 79px;
 
     &__text {
       max-width: 300px;
@@ -101,6 +102,7 @@
 
     h2 {
       margin-bottom: 13px;
+      font-size: 28px;
     }
 
     &__img {
@@ -108,6 +110,8 @@
     }
 
     .button {
+      display: block;
+      text-align: center;
       width: 100%;
     }
   }
