@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<div class="top-block">
+<div class="gradient-background">
   <div class="wrapper wrapper-1160">
     <header class="main-header">
       <a class="site-logo">
@@ -20,8 +20,8 @@
       </a>
       <a href="tel:8-800-555-55-55" class="main-header__phone">8-800-555-55-55</a>
     </header>
-    <section class="promo-block">
-      <div class="promo-block__text">
+    <section class="top-block">
+      <div class="top-block__text">
         <h2>Омск</h2>
         <div class="title-wrapper">
           <h1>Фитнес центр</h1>
@@ -33,11 +33,11 @@
         </div>
         <a href="#subscriptions" class="button button--white-border">Купить абонемент</a>
       </div>
-      <picture class="promo-block__img">
+      <picture class="top-block__img">
         <source srcset="img/promo-img.webp" type="image/webp">
         <img src="img/promo-img.jpg" alt="промо-фото">
       </picture>
-      <div class="promo-block__social-links social-links">
+      <div class="top-block__social-links social-links">
         <a href="#">Фейсбук
           <svg width="13" height="9">
             <use xlink:href="img/sprite_auto.svg#icon-facebook-promo"/>
@@ -66,7 +66,8 @@
         <span>Просторный зал площадью 900 кв/м</span>
         <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
           зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p class="js-mobile-hidden">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+        <p class="js-mobile-hidden">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также
+          в фитнес центре есть
           несколько оборудованных залов для различных видов групповых занятий.</p>
       </div>
       <div class="gym-block__media">
@@ -81,6 +82,96 @@
                 allowfullscreen></iframe>
       </div>
     </div>
+  </section>
+
+  <section class="subscriptions-block" id="subscriptions">
+    <div class="wrapper wrapper-1160">
+      <h2>Абонементы</h2>
+      <div class="subscriptions-block__tabs">
+        <span data-tab="1" class="js-tab-trigger active">1 месяц</span>
+        <span data-tab="6" class="js-tab-trigger">6 месяцев</span>
+        <span data-tab="12" class="js-tab-trigger" >12 месяцев</span>
+      </div>
+      <div class="subscriptions-items js-tab-content active" data-tab="1">
+        <div class="subscriptions-item">
+          <h3>С тренером</h3>
+          <span class="subscriptions-item__terms">12 занятий</span>
+          <div class="subscriptions-item__price-shadow">5000</div>
+          <div class="subscriptions-item__price">5000&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+        <div class="subscriptions-item">
+          <h3>Дневной</h3>
+          <span class="subscriptions-item__terms">с 8:00 до 17:00</span>
+          <div class="subscriptions-item__price-shadow">1700</div>
+          <div class="subscriptions-item__price">1700&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+        <div class="subscriptions-item">
+          <h3>Полный день</h3>
+          <span class="subscriptions-item__terms">с 8:00 до 22:00 </span>
+          <div class="subscriptions-item__price-shadow">2700</div>
+          <div class="subscriptions-item__price">2700&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+      </div>
+
+      <div class="subscriptions-items js-tab-content"  data-tab="6">
+        <div class="subscriptions-item">
+          <h3>С тренером</h3>
+          <span class="subscriptions-item__terms">12 занятий</span>
+          <div class="subscriptions-item__price-shadow">28000</div>
+          <div class="subscriptions-item__price">28000&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+        <div class="subscriptions-item">
+          <h3>Дневной</h3>
+          <span class="subscriptions-item__terms">с 8:00 до 17:00</span>
+          <div class="subscriptions-item__price-shadow">9200</div>
+          <div class="subscriptions-item__price">9200&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+        <div class="subscriptions-item">
+          <h3>Полный день</h3>
+          <span class="subscriptions-item__terms">с 8:00 до 22:00 </span>
+          <div class="subscriptions-item__price-shadow">15200</div>
+          <div class="subscriptions-item__price">15200&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+      </div>
+
+      <div class="subscriptions-items js-tab-content"  data-tab="12" >
+        <div class="subscriptions-item">
+          <h3>С тренером</h3>
+          <span class="subscriptions-item__terms">12 занятий</span>
+          <div class="subscriptions-item__price-shadow">55000</div>
+          <div class="subscriptions-item__price">55000&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+        <div class="subscriptions-item">
+          <h3>Дневной</h3>
+          <span class="subscriptions-item__terms">с 8:00 до 17:00</span>
+          <div class="subscriptions-item__price-shadow">18400</div>
+          <div class="subscriptions-item__price">18400&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+        <div class="subscriptions-item">
+          <h3>Полный день</h3>
+          <span class="subscriptions-item__terms">с 8:00 до 22:00 </span>
+          <div class="subscriptions-item__price-shadow">30400</div>
+          <div class="subscriptions-item__price">30400&nbsp;<span>₽</span></div>
+          <a href="#" class="button subscriptions-item__button">Купить абонемент</a>
+        </div>
+      </div>
+    </div>
+    <picture>
+      <source srcset="img/barbell-plates.webp" type="image/webp">
+      <img src="img/barbell-plates.png" alt="блины для штанги">
+    </picture>
+  </section>
+
+  <section class="promo-block">
+
   </section>
 </main>
 

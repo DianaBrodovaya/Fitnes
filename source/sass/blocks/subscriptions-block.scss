@@ -1,0 +1,154 @@
+.subscriptions-block {
+  padding: 117px 0 78px;
+  background: $light-background;
+  text-align: center;
+  position: relative;
+
+  &__tabs {
+    display: inline-block;
+    margin: 10px auto 39px;
+    color: rgba(16, 38, 84, 0.5);
+    font-size: 20px;
+    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+    span {
+      display: inline-block;
+      padding: 15px 0;
+      cursor: pointer;
+      margin-bottom: -2px;
+    }
+
+    span:not(:last-child) {
+      margin-right: 35px;
+    }
+
+    span.active {
+      color: #102654;
+      border-bottom: 2px solid #D10A42;
+    }
+  }
+
+  img {
+    position: absolute;
+    bottom: -73px;
+    right: -138px;
+    z-index: 1;
+    width: 380px;
+  }
+}
+
+.subscriptions-items {
+  display: none;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.subscriptions-item {
+  background: #ffffff;
+  border: 7px solid transparent;
+  padding: 60px 10px;
+  width: calc((100% - 72px) / 3);
+  margin-bottom: 40px;
+  transition: all 0.3s;
+
+  &__terms {
+    display: inline-block;
+    margin-bottom: 38px;
+  }
+
+  &__price-shadow {
+    font: 100px/1 "Roboto Condensed Bold", sans-serif;
+    color: #e8e8e8;
+  }
+
+  &__price {
+    font: 60px/1 "Roboto Condensed Bold", sans-serif;
+    color: #103aae;
+    margin: -55px 0 48px;
+
+    span {
+      color: #102654;
+    }
+  }
+
+  &__button {
+    padding: 22px 0;
+    width: 206px;
+  }
+
+  &:hover {
+    border-image: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
+    border-image-slice: 1;
+  }
+
+  &:hover .button {
+    color: #ffffff;
+    border: none;
+    padding: 24px 0;
+    background: linear-gradient(111.72deg, #Ed0233 17.6%, #003eb7 95.31%);
+  }
+}
+
+@media screen and(max-width: $tablet-width) {
+  .subscriptions-block {
+    padding: 92px 0 61px;
+
+    &__tabs {
+      margin-top: 3px;
+    }
+
+    img {
+      right: -73px;
+      bottom: -57px;
+      width: 350px;
+      height: auto;
+    }
+  }
+
+  .subscriptions-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscriptions-item {
+    width: 100%;
+    max-width: 442px;
+    padding-bottom: 71px;
+  }
+
+}
+
+@media screen and(max-width: $mobile-width) {
+  .subscriptions-block {
+    padding: 55px 0 30px;
+
+    &__tabs {
+      font-size: 16px;
+
+      span {
+        padding: 10px 0;
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  .subscriptions-item {
+    padding: 49px 10px;
+
+    &__price-shadow {
+      font-size: 80px;
+    }
+
+    &__price {
+      font-size: 48px
+    }
+  }
+}
