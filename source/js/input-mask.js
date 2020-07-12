@@ -20,10 +20,10 @@ window.addEventListener('DOMContentLoaded', function() {
     this.value = matrix.replace(/./g, function(a) {
       return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a
     });
-    if (event.type == 'blur') {
-      if (this.value.length == 2) this.value = ''
+    if (event.type === 'blur') {
+      if (this.value.length === 2) this.value = ''
     } else setCursorPosition(this.value.length, this)
-  };
+  }
 
   let input = document.querySelectorAll('input[type="tel"]');
   for (let i = 0; i < input.length; i++) {
@@ -32,5 +32,3 @@ window.addEventListener('DOMContentLoaded', function() {
     input[i].addEventListener('blur', mask, false);
   }
 });
-
-

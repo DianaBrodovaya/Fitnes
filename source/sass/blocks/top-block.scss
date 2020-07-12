@@ -71,7 +71,6 @@
     }
 
     .title-wrapper {
-
       ul {
         font-size: 14px;
         left: 0;
@@ -113,5 +112,11 @@
       text-align: center;
       width: 100%;
     }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .gradient-background {
+    background: linear-gradient(45deg, #003d85 0%, #003d85 1%, #b80027 82%, #b80027 100%);
   }
 }

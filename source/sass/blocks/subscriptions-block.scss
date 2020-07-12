@@ -24,7 +24,7 @@
 
     span.active {
       color: #102654;
-      border-bottom: 2px solid #D10A42;
+      border-bottom: 2px solid #d10a42;
     }
   }
 
@@ -62,12 +62,12 @@
   }
 
   &__price-shadow {
-    font: 100px/1 "Roboto Condensed Bold", sans-serif;
+    font: bold 100px/1 "Roboto Condensed Bold", "Arial", sans-serif;
     color: #e8e8e8;
   }
 
   &__price {
-    font: 60px/1 "Roboto Condensed Bold", sans-serif;
+    font: bold 60px/1 "Roboto Condensed Bold", "Arial", sans-serif;
     color: #103aae;
     margin: -55px 0 48px;
 
@@ -90,7 +90,7 @@
     color: #ffffff;
     border: none;
     padding: 24px 0;
-    background: linear-gradient(111.72deg, #Ed0233 17.6%, #003eb7 95.31%);
+    background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 }
 
@@ -119,7 +119,6 @@
     max-width: 442px;
     padding-bottom: 71px;
   }
-
 }
 
 @media screen and(max-width: $mobile-width) {
@@ -147,7 +146,7 @@
     }
 
     &__price {
-      font-size: 48px
+      font-size: 48px;
     }
   }
 }
