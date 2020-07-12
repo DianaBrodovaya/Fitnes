@@ -31,9 +31,9 @@
   img {
     position: absolute;
     bottom: -73px;
-    right: -138px;
+    right: 0;
     z-index: 1;
-    width: 380px;
+    width: 242px;
   }
 }
 
@@ -103,7 +103,6 @@
     }
 
     img {
-      right: -73px;
       bottom: -57px;
       width: 350px;
       height: auto;

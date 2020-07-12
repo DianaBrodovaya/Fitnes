@@ -90,7 +90,7 @@
       <div class="subscriptions-block__tabs">
         <span data-tab="1" class="js-tab-trigger active">1 месяц</span>
         <span data-tab="6" class="js-tab-trigger">6 месяцев</span>
-        <span data-tab="12" class="js-tab-trigger" >12 месяцев</span>
+        <span data-tab="12" class="js-tab-trigger">12 месяцев</span>
       </div>
       <div class="subscriptions-items js-tab-content active" data-tab="1">
         <div class="subscriptions-item">
@@ -116,7 +116,7 @@
         </div>
       </div>
 
-      <div class="subscriptions-items js-tab-content"  data-tab="6">
+      <div class="subscriptions-items js-tab-content" data-tab="6">
         <div class="subscriptions-item">
           <h3>С тренером</h3>
           <span class="subscriptions-item__terms">12 занятий</span>
@@ -140,7 +140,7 @@
         </div>
       </div>
 
-      <div class="subscriptions-items js-tab-content"  data-tab="12" >
+      <div class="subscriptions-items js-tab-content" data-tab="12">
         <div class="subscriptions-item">
           <h3>С тренером</h3>
           <span class="subscriptions-item__terms">12 занятий</span>
@@ -165,13 +165,41 @@
       </div>
     </div>
     <picture>
-      <source srcset="img/barbell-plates.webp" type="image/webp">
+      <source media="(min-width: 1200px)" srcset="img/barbell-plates.webp" type="image/webp">
+      <source srcset="img/barbell-plates-tablet.webp" type="image/webp">
       <img src="img/barbell-plates.png" alt="блины для штанги">
     </picture>
   </section>
 
   <section class="promo-block">
-
+    <div class="wrapper wrapper-1160">
+      <div class="promo-block__info">
+        <div class="flex-wrapper">
+          <h2>Super Games</h2>
+          <div class="promo-block__timetable">
+            <div class="promo-block__timetable-info">
+              <span class="promo-block__timetable-title">Дата</span>
+              <span class="promo-block__timetable-text">
+              7<span>Марта<br> 2019</span>
+            </span>
+            </div>
+            <div class="promo-block__timetable-info">
+              <span class="promo-block__timetable-title">Время</span>
+              <span class="promo-block__timetable-text">
+              12:00
+            </span>
+            </div>
+          </div>
+        </div>
+        <p>Ежегодные соревнования по CrossFit</p>
+        <a href="#" class="button button--white-border">Заполнить заявку</a>
+      </div>
+      <picture class="promo-block__img">
+        <source media="(min-width: 768px)" srcset="img/promoblock-img.webp" type="image/webp">
+        <source srcset="img/promoblock-img-mobile.webp" type="image/webp">
+        <img src="img/promoblock-img.jpg" alt="соревнования по CrossFit">
+      </picture>
+    </div>
   </section>
 </main>
 
