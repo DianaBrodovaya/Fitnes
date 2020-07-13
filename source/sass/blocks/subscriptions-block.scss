@@ -1,32 +1,8 @@
 .subscriptions-block {
-  padding: 117px 0 78px;
-  background: $light-background;
+  padding: 117px 0 150px;
+  background: url("../img/barbell-plates.png") no-repeat bottom right -137px, linear-gradient(to top, #ffffff 75px, $light-background 75px);
   text-align: center;
   position: relative;
-
-  &__tabs {
-    display: inline-block;
-    margin: 10px auto 39px;
-    color: rgba(16, 38, 84, 0.5);
-    font-size: 20px;
-    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
-
-    span {
-      display: inline-block;
-      padding: 15px 0;
-      cursor: pointer;
-      margin-bottom: -2px;
-    }
-
-    span:not(:last-child) {
-      margin-right: 35px;
-    }
-
-    span.active {
-      color: #102654;
-      border-bottom: 2px solid #d10a42;
-    }
-  }
 
   img {
     position: absolute;
@@ -37,15 +13,39 @@
   }
 }
 
+.subscriptions-block__tabs {
+  display: inline-block;
+  margin: 10px auto 39px;
+  color: rgba(16, 38, 84, 0.5);
+  font-size: 20px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  span {
+    display: inline-block;
+    padding: 15px 0;
+    cursor: pointer;
+    margin-bottom: -2px;
+  }
+
+  span:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  span.active {
+    color: #102654;
+    border-bottom: 2px solid #d10a42;
+  }
+}
+
 .subscriptions-items {
   display: none;
   justify-content: space-between;
   position: relative;
   z-index: 2;
+}
 
-  &.active {
-    display: flex;
-  }
+.subscriptions-items.active {
+  display: flex;
 }
 
 .subscriptions-item {
@@ -56,31 +56,6 @@
   margin-bottom: 40px;
   transition: all 0.3s;
 
-  &__terms {
-    display: inline-block;
-    margin-bottom: 38px;
-  }
-
-  &__price-shadow {
-    font: bold 100px/1 "Roboto Condensed Bold", "Arial", sans-serif;
-    color: #e8e8e8;
-  }
-
-  &__price {
-    font: bold 60px/1 "Roboto Condensed Bold", "Arial", sans-serif;
-    color: #103aae;
-    margin: -55px 0 48px;
-
-    span {
-      color: #102654;
-    }
-  }
-
-  &__button {
-    padding: 22px 0;
-    width: 206px;
-  }
-
   &:hover {
     border-image: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
     border-image-slice: 1;
@@ -89,24 +64,49 @@
   &:hover .button {
     color: #ffffff;
     border: none;
-    padding: 24px 0;
+    padding: 24px 41px;
     background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 }
 
+.subscriptions-item__terms {
+  display: inline-block;
+  margin-bottom: 38px;
+}
+
+.subscriptions-item__price-shadow {
+  font: bold 100px/1 "Roboto Condensed", "Arial", sans-serif;
+  color: #e8e8e8;
+}
+
+.subscriptions-item__price {
+  font: bold 60px/1 "Roboto Condensed", "Arial", sans-serif;
+  color: #103aae;
+  margin: -55px 0 48px;
+
+  span {
+    color: #102654;
+  }
+}
+
+.subscriptions-item__button {
+  padding: 22px 41px;
+}
+
 @media screen and(max-width: $tablet-width) {
   .subscriptions-block {
-    padding: 92px 0 61px;
-
-    &__tabs {
-      margin-top: 3px;
-    }
+    padding: 92px 0 150px;
+    background-position: right -50px bottom;
 
     img {
       bottom: -57px;
       width: 350px;
       height: auto;
     }
+  }
+
+  .subscriptions-block__tabs {
+    margin-top: 3px;
   }
 
   .subscriptions-items {
@@ -124,29 +124,26 @@
 @media screen and(max-width: $mobile-width) {
   .subscriptions-block {
     padding: 55px 0 30px;
+    background: $light-background;
+  }
 
-    &__tabs {
-      font-size: 16px;
+  .subscriptions-block__tabs {
+    font-size: 16px;
 
-      span {
-        padding: 10px 0;
-      }
-    }
-
-    img {
-      display: none;
+    span {
+      padding: 10px 0;
     }
   }
 
   .subscriptions-item {
     padding: 49px 10px;
+  }
 
-    &__price-shadow {
-      font-size: 80px;
-    }
+  .subscriptions-item__price-shadow {
+    font-size: 80px;
+  }
 
-    &__price {
-      font-size: 48px;
-    }
+  .subscriptions-item__price {
+    font-size: 48px;
   }
 }

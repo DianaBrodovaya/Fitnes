@@ -7,13 +7,6 @@
   display: flex;
   padding-bottom: 50px;
 
-  &__text {
-    direction: rtl;
-    padding-right: 76px;
-    padding-top: 110px;
-    width: 480px;
-  }
-
   .title-wrapper {
     position: relative;
 
@@ -27,23 +20,31 @@
   .button {
     padding: 21px 54px;
   }
+}
 
-  &__social-links {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 200px;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-bottom: 31px;
+.top-block__text {
+  direction: rtl;
+  padding-right: 76px;
+  padding-top: 110px;
+  width: 480px;
+}
 
-    a {
-      display: inline-block;
-      margin-bottom: 24px;
-      position: relative;
-      left: 9px;
-    }
+.top-block__social-links {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 31px;
+
+  a {
+    display: inline-block;
+    margin-bottom: 24px;
+    position: relative;
+    left: 9px;
   }
 }
+
 
 @media screen and(max-width: $tablet-width) {
   .top-block {
@@ -51,23 +52,9 @@
     padding-bottom: 76px;
     justify-content: space-between;
 
-    &__text {
-      width: 354px;
-      padding-top: 55px;
-      padding-right: 30px;
-    }
-
     h2 {
       margin-bottom: 5px;
       font-size: 34px;
-    }
-
-    &__img {
-      width: calc(100% - 354px);
-
-      img {
-        min-height: 390px;
-      }
     }
 
     .title-wrapper {
@@ -81,10 +68,24 @@
     .button {
       padding: 21px 33px;
     }
+  }
 
-    &__social-links {
-      display: none;
+  .top-block__text {
+    width: 354px;
+    padding-top: 55px;
+    padding-right: 30px;
+  }
+
+  .top-block__img {
+    width: calc(100% - 354px);
+
+    img {
+      min-height: 390px;
     }
+  }
+
+  .top-block__social-links {
+    display: none;
   }
 }
 
@@ -94,17 +95,8 @@
     padding-top: 66px;
     padding-bottom: 79px;
 
-    &__text {
-      max-width: 300px;
-      padding: 0;
-    }
-
     h2 {
       margin-bottom: 13px;
-    }
-
-    &__img {
-      display: none;
     }
 
     .button {
@@ -112,6 +104,15 @@
       text-align: center;
       width: 100%;
     }
+  }
+
+  .top-block__text {
+    max-width: 300px;
+    padding: 0;
+  }
+
+  .top-block__img {
+    display: none;
   }
 }
 

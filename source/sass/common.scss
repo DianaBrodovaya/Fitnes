@@ -59,7 +59,7 @@ p {
 
 h1 {
   margin: 0 0 75px 0;
-  font: bold 109px/1 "Bebas Neue Bold", "Arial", sans-serif;
+  font: bold 109px/1 "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -78,11 +78,15 @@ h2 + span {
 
 h3 {
   margin: 0 0 14px 0;
-  font: bold 26px/1 "Roboto Condensed Bold", "Arial", sans-serif;
+  font: bold 26px/1 "Roboto Condensed", "Arial", sans-serif;
 }
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .button {

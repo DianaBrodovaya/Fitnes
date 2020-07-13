@@ -1,55 +1,14 @@
 .promo-block {
   .wrapper {
-    padding-top: 128px;
+    padding-top: 56px;
     padding-bottom: 60px;
     display: flex;
   }
 
-  &__info {
-    background: #ed0233;
-    padding: 87px 71px 0 87px;
-    color: #ffffff;
-    width: 500px;
-  }
-
-  &__img {
-    width: calc(100% - 500px);
-  }
-
   h2 {
-    font: bold 90px/1 "Bebas Neue Bold", "Arial", sans-serif;
+    font: bold 90px/1 "Bebas Neue", "Arial", sans-serif;
     max-width: 201px;
     margin-bottom: 5px;
-  }
-
-  &__timetable {
-    display: flex;
-    flex-direction: column;
-    margin-top: -2px;
-  }
-
-  &__timetable-info {
-    margin-bottom: 17px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  &__timetable-title {
-    font-size: 18px;
-    padding-bottom: 5px;
-  }
-
-  &__timetable-text {
-    font: bold 40px/1 "Roboto Condensed Bold", "Arial", sans-serif;
-    border-top: 1px solid #ffffff;
-    padding-top: 5px;
-
-    span {
-      font: 14px/1.4 "Roboto Condensed", "Arial", sans-serif;
-      display: inline-block;
-      padding-left: 7px;
-    }
   }
 
   p {
@@ -66,6 +25,47 @@
   }
 }
 
+.promo-block__info {
+  background: #ed0233;
+  padding: 87px 71px 0 87px;
+  color: #ffffff;
+  width: 500px;
+}
+
+.promo-block__img {
+  width: calc(100% - 500px);
+}
+
+.promo-block__timetable {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
+}
+
+.promo-block__timetable-info {
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.promo-block__timetable-title {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.promo-block__timetable-text {
+  font: bold 40px/1 "Roboto Condensed", "Arial", sans-serif;
+  border-top: 1px solid #ffffff;
+  padding-top: 5px;
+
+  span {
+    font: 14px/1.4 "Roboto Condensed", "Arial", sans-serif;
+    display: inline-block;
+    padding-left: 7px;
+  }
+}
+
 @media screen and (max-width: $tablet-width) {
   .promo-block {
     .wrapper {
@@ -73,38 +73,9 @@
       padding-bottom: 40px;
     }
 
-    &__info {
-      width: 292px;
-      padding: 50px 45px 50px;
-    }
-
-    &__img {
-      width: calc(100% - 292px);
-    }
-
     h2 {
       font-size: 52px;
       margin-bottom: 0;
-    }
-
-    &__timetable-info {
-      margin-bottom: 8px;
-    }
-
-    &__timetable-title {
-      font-size: 12px;
-      padding-bottom: 2px;
-    }
-
-    &__timetable-text {
-      font-size: 24px;
-      padding-top: 2px;
-
-      span {
-        font-size: 10px;
-        line-height: 1.2;
-        padding-left: 2px;
-      }
     }
 
     p {
@@ -117,6 +88,35 @@
       padding: 13px 0;
     }
   }
+
+  .promo-block__info {
+    width: 292px;
+    padding: 50px 45px 50px;
+  }
+
+  .promo-block__img {
+    width: calc(100% - 292px);
+  }
+
+  .promo-block__timetable-info {
+    margin-bottom: 8px;
+  }
+
+  .promo-block__timetable-title {
+    font-size: 12px;
+    padding-bottom: 2px;
+  }
+
+  .promo-block__timetable-text {
+    font-size: 24px;
+    padding-top: 2px;
+
+    span {
+      font-size: 10px;
+      line-height: 1.2;
+      padding-left: 2px;
+    }
+  }
 }
 
 @media screen and (max-width: $mobile-width) {
@@ -126,10 +126,10 @@
       padding-top: 36px;
       padding-bottom: 30px;
     }
+  }
 
-    &__info,
-    &__img {
-      width: 100%;
-    }
+  .promo-block__info,
+  .promo-block__img {
+    width: 100%;
   }
 }

@@ -2,11 +2,11 @@
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
-  font: bold 26px/1 "Bebas Neue Bold", "Arial", sans-serif;
+  font: bold 26px/1 "Bebas Neue", "Arial", sans-serif;
+}
 
-  &__phone:hover {
-    transform: scale(1.2);
-  }
+.main-header__phone:hover {
+  transform: scale(1.2);
 }
 
 @media screen and(max-width: $tablet-width) {
