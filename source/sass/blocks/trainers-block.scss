@@ -1,0 +1,25 @@
+.trainers-block {
+  padding: 60px 0 120px;
+
+  h2 {
+    margin-bottom: 56px;
+  }
+}
+
+.trainers-slider {
+  text-align: center;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .trainers-block {
+    h2 {
+      margin-bottom: 41px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .trainers-block {
+    padding: 40px 0 60px;
+  }
+}

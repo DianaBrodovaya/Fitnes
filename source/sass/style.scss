@@ -1,11 +1,12 @@
 @import "vendors/normalize";
 @import "fonts";
 @import "variables";
-@import "mixins";
 @import "common";
+@import "sliders";
 @import "source/sass/blocks/main-header";
 @import "source/sass/blocks/top-block";
 @import "source/sass/blocks/gym-block";
 @import "source/sass/blocks/subscriptions-block";
 @import "source/sass/blocks/promo-block";
+@import "source/sass/blocks/trainers-block";
 @import "source/sass/blocks/main-footer";

@@ -38,10 +38,6 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
-
 img {
   display: block;
   width: 100%;
@@ -66,7 +62,7 @@ h1 {
 
 h2 {
   margin: 0 0 13px 0;
-  font: 49px/1 "Bebas Neue", "Arial", sans-serif;
+  font: bold 49px/1 "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -121,10 +117,6 @@ textarea {
   width: 100%;
   margin-bottom: 42px;
   color: #ffffff;
-
-  @include input-placeholder {
-    color: $placeholder-color;
-  }
 }
 
 textarea,
