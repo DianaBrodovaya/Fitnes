@@ -122,3 +122,16 @@
     background: linear-gradient(45deg, #003d85 0%, #003d85 1%, #b80027 82%, #b80027 100%);
   }
 }
+
+@supports (-ms-ime-align:auto) {
+  .gradient-background {
+    background: linear-gradient(45deg, #003d85 0%, #003d85 1%, #b80027 82%, #b80027 100%);
+  }
+}
+
+@-moz-document url-prefix () {
+  .gradient-background {
+    background: linear-gradient(45deg, #003d85 0%, #003d85 1%, #b80027 82%, #b80027 100%);
+  }
+}
+
