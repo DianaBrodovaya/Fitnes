@@ -1,0 +1,151 @@
+.stocks-block {
+  padding: 118px 0 70px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  a {
+    text-transform: uppercase;
+    font: bold 12px/1 "Roboto Condensed", "Arial", sans-serif;
+    border-bottom: 1px solid;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+.promo-block--stocks,
+.discounts-block {
+  width: calc((100% - 40px) / 2);
+  display: flex;
+}
+
+.promo-block__info {
+  &--stocks {
+    width: 280px;
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+.promo-block__img {
+  &--stocks {
+    width: calc(100% - 280px);
+  }
+}
+
+.promo-block__title {
+  font: bold 70px/1 "Roboto Condensed", "Arial", sans-serif;
+  margin-bottom: 30px;
+
+  p {
+    font: bold 28px/1 "Roboto Condensed", "Arial", sans-serif;
+    margin-bottom: 5px;
+  }
+}
+
+.discounts-block {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.discounts-item {
+  width: 100%;
+  border: 7px solid transparent;
+  border-image: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
+  border-image-slice: 1;
+  padding: 23px 35px;
+  height: calc((100% - 40px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.discounts-item__name {
+  font: bold 26px "Roboto Condensed", "Arial", sans-serif;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .stocks-block {
+    padding: 98px 0 50px;
+
+    h2 {
+      margin-bottom: 43px;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .promo-block--stocks {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 462px;
+    overflow: hidden;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .promo-block__title {
+    p {
+      font-size: 28px;
+    }
+  }
+
+  .discounts-block {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .discounts-item {
+    height: auto;
+    min-height: 211px;
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .stocks-block {
+    padding: 65px 0 30px;
+
+    h2 {
+      margin-bottom: 46px;
+    }
+  }
+
+  .promo-block--stocks {
+    flex-direction: column;
+    max-height: 596px;
+  }
+
+  .promo-block__info--stocks,
+  .promo-block__img--stocks {
+    width: 100%;
+    text-align: center;
+  }
+
+  .discounts-block {
+    flex-direction: column;
+  }
+
+  .discounts-item {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
