@@ -15,20 +15,20 @@
   h2 {
     margin-bottom: 35px;
   }
-}
 
-.request-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 410px;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 410px;
 
-  label {
-    width: calc((100% - 30px) / 2);
-  }
+    label {
+      width: calc((100% - 30px) / 2);
+    }
 
-  button {
-    width: 100%;
+    button {
+      width: 100%;
+    }
   }
 }
 
@@ -49,19 +49,28 @@
 }
 
 .contacts__item {
+  font-size: 14px;
+
   &:nth-child(2n +1) {
     margin-bottom: 16px;
   }
 
   span {
     display: block;
-    font-size: 14px;
 
-    &:first-child {
+    &:first-of-type {
       font-weight: bold;
       font-size: 16px;
       margin-bottom: 10px;
     }
+  }
+
+  a {
+    border-bottom: 1px solid transparent;
+  }
+
+  a:hover {
+    border-color: inherit;
   }
 }
 
@@ -80,10 +89,10 @@
     h2 {
       margin-bottom: 30px;
     }
-  }
 
-  .request-form {
-    max-width: 480px;
+    form {
+      max-width: 480px;
+    }
   }
 
   .contacts {
@@ -101,7 +110,7 @@
     span {
       font-size: 18px;
 
-      &:first-child {
+      &:first-of-type {
         font-size: 20px;
       }
     }
@@ -115,11 +124,11 @@
 
   .request {
     padding: 65px 15px 77px;
-  }
 
-  .request-form {
-    label {
-      width: 100%;
+    form {
+      label {
+        width: 100%;
+      }
     }
   }
 
