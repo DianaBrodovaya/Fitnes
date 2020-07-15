@@ -8,30 +8,19 @@
 .swiper-button-next {
   outline: none;
   top: 62%;
+  width: 16px;
+  height: 32px;
+  background-size: cover;
 }
 
 .swiper-button-prev {
   left: 47px;
-
-  &::after {
-    width: 16px;
-    height: 32px;
-    content: "";
-    background-image: url("../img/prev.svg");
-    background-size: cover;
-  }
+  background-image: url("../img/prev.svg");
 }
 
 .swiper-button-next {
   right: 47px;
-
-  &::after {
-    width: 16px;
-    height: 32px;
-    content: "";
-    background-image: url("../img/next.svg");
-    background-size: cover;
-  }
+  background-image: url("../img/next.svg");
 }
 
 .swiper-slide {

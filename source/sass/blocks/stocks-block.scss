@@ -3,7 +3,7 @@
 
   h2 {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 
   a {
@@ -21,12 +21,13 @@
 .discounts-block {
   width: calc((100% - 40px) / 2);
   display: flex;
+  padding: 0;
 }
 
 .promo-block__info {
   &--stocks {
     width: 280px;
-    padding: 35px 45px;
+    padding: 41px 25px 42px 55px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,7 +46,7 @@
 
 .promo-block__title {
   font: bold 70px/1 "Roboto Condensed", "Arial", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 
   p {
     font: bold 28px/1 "Roboto Condensed", "Arial", sans-serif;
@@ -90,7 +91,7 @@
   }
 
   .promo-block--stocks {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     width: 100%;
     max-width: 700px;
     max-height: 462px;
@@ -107,6 +108,10 @@
     }
   }
 
+  .promo-block__info--stocks {
+    padding-left: 46px;
+  }
+
   .discounts-block {
     width: 100%;
     flex-direction: row;
@@ -121,7 +126,7 @@
 
 @media screen and (max-width: $mobile-width) {
   .stocks-block {
-    padding: 65px 0 20px;
+    padding: 75px 0 20px;
 
     h2 {
       margin-bottom: 46px;
@@ -147,5 +152,6 @@
     width: 100%;
     margin-bottom: 30px;
     text-align: center;
+    padding: 33px 35px 35px;
   }
 }

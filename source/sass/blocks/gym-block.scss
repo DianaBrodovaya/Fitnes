@@ -1,29 +1,30 @@
 .gym-block {
   .wrapper {
-    padding: 164px 34px 137px 34px;
+    padding: 164px 34px 134px 34px;
     display: flex;
     justify-content: space-between;
   }
 }
 
 .gym-block__text {
-  padding: 0 30px 0 128px;
+  padding: 0 0 0 128px;
   max-width: 360px;
   box-sizing: content-box;
 
   p {
     font-weight: 300;
+    margin-bottom: 7px;
   }
 }
 
 .gym-block__media {
-  padding: 55px 0 0 125px;
+  padding: 59px 0 0 137px;
   position: relative;
 
   iframe {
     position: absolute;
-    bottom: -17px;
-    left: 0;
+    bottom: -15px;
+    left: 20px;
   }
 }
 
@@ -40,6 +41,10 @@
     max-width: 520px;
     padding: 0 0 26px 0;
     text-align: center;
+
+    p {
+      margin-bottom: 16px;
+    }
   }
 
   .gym-block__media {

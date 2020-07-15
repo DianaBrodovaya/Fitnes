@@ -1,6 +1,6 @@
 .subscriptions-block {
-  padding: 117px 0 150px;
-  background: url("../img/barbell-plates.png") no-repeat bottom right -137px, linear-gradient(to top, #ffffff 75px, $light-background 75px);
+  padding: 117px 0 155px;
+  background: url("../img/barbell-plates.png") no-repeat bottom right -158px, linear-gradient(to top, #ffffff 75px, $light-background 75px);
   text-align: center;
   position: relative;
 
@@ -51,7 +51,7 @@
 .subscriptions-item {
   background: #ffffff;
   border: 7px solid transparent;
-  padding: 60px 10px;
+  padding: 52px 10px 62px;
   width: calc((100% - 72px) / 3);
   margin-bottom: 40px;
   transition: all 0.3s;
@@ -64,7 +64,7 @@
   &:hover .button {
     color: #ffffff;
     border: none;
-    padding: 24px 41px;
+    padding: 24px 45px;
     background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 }
@@ -90,12 +90,12 @@
 }
 
 .subscriptions-item__button {
-  padding: 22px 41px;
+  padding: 22px 45px;
 }
 
 @media screen and(max-width: $tablet-width) {
   .subscriptions-block {
-    padding: 92px 0 150px;
+    padding: 98px 0 137px;
     background-position: right -50px bottom;
 
     img {
@@ -106,7 +106,7 @@
   }
 
   .subscriptions-block__tabs {
-    margin-top: 3px;
+    margin: 0 auto 47px;
   }
 
   .subscriptions-items {
@@ -117,18 +117,23 @@
   .subscriptions-item {
     width: 100%;
     max-width: 442px;
-    padding-bottom: 71px;
+    padding: 54px 10px 63px;
+
+    h3 {
+      font-size: 26px;
+    }
   }
 }
 
 @media screen and(max-width: $mobile-width) {
   .subscriptions-block {
-    padding: 55px 0 30px;
+    padding: 67px 0 30px;
     background: $light-background;
   }
 
   .subscriptions-block__tabs {
     font-size: 16px;
+    margin: 0 auto 36px;
 
     span {
       padding: 10px 0;
@@ -136,7 +141,11 @@
   }
 
   .subscriptions-item {
-    padding: 49px 10px;
+    padding: 46px 10px;
+
+    h3 {
+      font-size: 22px;
+    }
   }
 
   .subscriptions-item__price-shadow {
@@ -145,5 +154,6 @@
 
   .subscriptions-item__price {
     font-size: 48px;
+    margin: -55px 0 43px;
   }
 }

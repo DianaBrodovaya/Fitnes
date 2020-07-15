@@ -5,16 +5,17 @@
 
 .top-block {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 56px;
 
   .title-wrapper {
     position: relative;
 
     ul {
       position: absolute;
-      left: 11px;
-      bottom: 26px;
+      left: 28px;
+      bottom: 31px;
       list-style: none;
+      font-size: 14px;
     }
   }
 
@@ -36,7 +37,7 @@
   flex-basis: 200px;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-bottom: 31px;
+  padding-bottom: 16px;
 
   a {
     display: inline-block;
@@ -50,7 +51,7 @@
 @media screen and(max-width: $tablet-width) {
   .top-block {
     padding-top: 16px;
-    padding-bottom: 76px;
+    padding-bottom: 82px;
     justify-content: space-between;
 
     h2 {
@@ -129,9 +130,8 @@
   }
 }
 
-@-moz-document url-prefix () {
+@-moz-document url-prefix() {
   .gradient-background {
     background: linear-gradient(45deg, #003d85 0%, #003d85 1%, #b80027 82%, #b80027 100%);
   }
 }
-

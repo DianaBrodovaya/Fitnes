@@ -1,10 +1,10 @@
 .advantages-block {
   background: $light-background;
-  padding: 115px 0 120px;
+  padding: 115px 0 110px;
 
   h2 {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 63px;
   }
 }
 
@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
-  height: 307px;
+  height: 327px;
 }
 
 .advantages-item {
@@ -29,7 +29,7 @@
   &--center {
     width: 240px;
     height: 100%;
-    margin: 0 60px;
+    margin: 10px 69px;
   }
 
   &--padding-top {
@@ -106,7 +106,7 @@
 
 @media screen and (max-width: $tablet-width) {
   .advantages-block {
-    padding: 90px 0 56px;
+    padding: 96px 0 56px;
 
     h2 {
       margin-bottom: 44px;
@@ -191,7 +191,7 @@
 
 @media screen and (max-width: $mobile-width) {
   .advantages-block {
-    padding: 66px 0 25px;
+    padding: 96px 0 25px;
 
     .wrapper {
       padding: 0;
@@ -212,12 +212,12 @@
 
     &--center {
       margin-bottom: 36px;
-      padding: 0;
+      padding: 9px 0 0 0;
     }
   }
 
   .advantages-item__value {
     padding-right: 0;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
   }
 }

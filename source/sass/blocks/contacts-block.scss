@@ -5,16 +5,16 @@
 .request,
 .contacts {
   width: 50%;
-
-  h2 {
-    margin-bottom: 35px;
-  }
 }
 
 .request {
   background: $dark-background;
   color: #ffffff;
-  padding: 70px 12% 66px 7%;
+  padding: 70px 12% 66px 8%;
+
+  h2 {
+    margin-bottom: 35px;
+  }
 }
 
 .request-form {
@@ -34,7 +34,11 @@
 
 .contacts {
   border-top: 1px solid #74819c;
-  padding: 70px 7% 66px 7%;
+  padding: 66px 6% 59px 10%;
+
+  h2 {
+    margin-bottom: 45px;
+  }
 }
 
 .contacts-items {
@@ -46,7 +50,7 @@
 
 .contacts__item {
   &:nth-child(2n +1) {
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 
   span {
@@ -69,15 +73,28 @@
   .request,
   .contacts {
     width: 100%;
-    padding: 67px 163px 67px 130px;
+    padding: 67px 15px 67px 130px;
+  }
 
+  .request {
     h2 {
       margin-bottom: 30px;
     }
   }
 
+  .request-form {
+    max-width: 480px;
+  }
+
+  .contacts {
+    h2 {
+      margin-bottom: 35px;
+    }
+  }
+
   .contacts-items {
     column-gap: 87px;
+    max-width: 540px;
   }
 
   .contacts__item {
@@ -96,9 +113,18 @@
     align-items: center;
   }
 
-  .request,
+  .request {
+    padding: 65px 15px 77px;
+  }
+
+  .request-form {
+    label {
+      width: 100%;
+    }
+  }
+
   .contacts {
-    padding: 65px 15px;
+    padding: 65px 15px 20px;
   }
 
   .contacts-items {

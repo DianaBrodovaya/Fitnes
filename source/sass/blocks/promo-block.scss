@@ -1,7 +1,7 @@
 .promo-block {
+  padding: 45px 0 60px;
+
   .wrapper {
-    padding-top: 56px;
-    padding-bottom: 60px;
     display: flex;
   }
 
@@ -18,6 +18,7 @@
 
   .button {
     display: block;
+    padding: 26px 44px;
 
     &:hover {
       color: #ed0233;
@@ -68,10 +69,7 @@
 
 @media screen and (max-width: $tablet-width) {
   .promo-block {
-    .wrapper {
-      padding-top: 82px;
-      padding-bottom: 40px;
-    }
+    padding: 25px 0 40px;
 
     h2 {
       font-size: 52px;
@@ -91,7 +89,7 @@
 
   .promo-block__info {
     width: 292px;
-    padding: 50px 45px 50px;
+    padding: 50px 45px 52px;
   }
 
   .promo-block__img {
@@ -121,10 +119,10 @@
 
 @media screen and (max-width: $mobile-width) {
   .promo-block {
+    padding: 74px 0 30px;
+
     .wrapper {
       flex-direction: column;
-      padding-top: 36px;
-      padding-bottom: 30px;
     }
   }
 
