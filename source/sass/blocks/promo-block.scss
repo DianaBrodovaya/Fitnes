@@ -3,12 +3,14 @@
 
   .wrapper {
     display: flex;
+    max-height: 500px;
+    overflow: hidden;
   }
 
   h2 {
     font: bold 90px/1 "Bebas Neue", "Arial", sans-serif;
     max-width: 201px;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
   }
 
   p {
@@ -28,13 +30,17 @@
 
 .promo-block__info {
   background: #ed0233;
-  padding: 87px 71px 0 87px;
+  padding: 80px 79px 0 79px;
   color: #ffffff;
   width: 500px;
 }
 
 .promo-block__img {
   width: calc(100% - 500px);
+
+  img {
+    object-fit: cover;
+  }
 }
 
 .promo-block__timetable {
@@ -69,7 +75,11 @@
 
 @media screen and (max-width: $tablet-width) {
   .promo-block {
-    padding: 25px 0 40px;
+    padding: 21px 0 40px;
+
+    .wrapper {
+      max-height: 350px;
+    }
 
     h2 {
       font-size: 52px;
@@ -88,12 +98,15 @@
   }
 
   .promo-block__info {
-    width: 292px;
-    padding: 50px 45px 52px;
-  }
+    padding: 70px 45px 52px;
 
-  .promo-block__img {
-    width: calc(100% - 292px);
+    .flex-wrapper,
+    .button,
+    p {
+      max-width: 202px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .promo-block__timetable-info {
@@ -117,17 +130,31 @@
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .promo-block__info {
+    width: 292px;
+    padding: 50px 45px 52px;
+  }
+
+  .promo-block__img {
+    width: calc(100% - 292px);
+  }
+}
+
 @media screen and (max-width: $mobile-width) {
   .promo-block {
-    padding: 74px 0 30px;
+    padding: 70px 0 30px;
 
     .wrapper {
       flex-direction: column;
+      max-height: none;
     }
   }
 
   .promo-block__info,
   .promo-block__img {
     width: 100%;
+    max-width: 442px;
+    margin: 0 auto;
   }
 }

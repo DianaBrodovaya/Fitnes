@@ -1,5 +1,5 @@
 .stocks-block {
-  padding: 118px 0 70px;
+  padding: 115px 0 70px;
 
   h2 {
     text-align: center;
@@ -27,7 +27,7 @@
 .promo-block__info {
   &--stocks {
     width: 280px;
-    padding: 41px 25px 42px 55px;
+    padding: 41px 25px 42px 44px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,16 +64,20 @@
   border: 7px solid transparent;
   border-image: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
   border-image-slice: 1;
-  padding: 23px 35px;
+  padding: 23px 28px 27px;
   height: calc((100% - 40px) / 2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.discounts-item__top {
+  padding-bottom: 15px;
+}
+
 .discounts-item__name {
   font: bold 26px "Roboto Condensed", "Arial", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: $tablet-width) {
@@ -121,6 +125,7 @@
     height: auto;
     min-height: 211px;
     width: calc((100% - 30px) / 2);
+    padding: 19px 28px 30px;
   }
 }
 
@@ -135,13 +140,17 @@
 
   .promo-block--stocks {
     flex-direction: column;
-    max-height: 596px;
+    max-height: none;
   }
 
   .promo-block__info--stocks,
   .promo-block__img--stocks {
     width: 100%;
     text-align: center;
+  }
+
+  .promo-block__info--stocks {
+    padding: 39px 10px 36px;
   }
 
   .discounts-block {

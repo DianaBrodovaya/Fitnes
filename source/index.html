@@ -79,9 +79,12 @@
           <source srcset="img/gym-img-mobile.webp" type="image/webp">
           <img src="img/gym-img.png" alt="тренажерный зал">
         </picture>
-        <iframe width="364" height="228" src="https://www.youtube.com/embed/cM-cNPULKUE"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen title="тренажерный зал для начинающих"></iframe>
+        <div class="gym-block__video-container video-container">
+          <iframe class="gym-block__video video" width="364" height="228"
+                  src="https://www.youtube.com/embed/cM-cNPULKUE"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen title="тренажерный зал для начинающих"></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -211,7 +214,7 @@
             </picture>
             <div class="hover-slide__name">Анна Павлова</div>
             <div class="hover-slide__info">
-              <div class="hover-slide__info--name">Анна Павлова</div>
+              <div class="hover-slide__hidden-name">Анна Павлова</div>
               <span>CrossFit</span>
               <ul>
                 <li>Certified Level 3 Trainer</li>
@@ -227,7 +230,7 @@
             </picture>
             <div class="hover-slide__name">Алексей Лавров</div>
             <div class="hover-slide__info">
-              <div class="hover-slide__info--name">Алексей Лавров</div>
+              <div class="hover-slide__hidden-name">Алексей Лавров</div>
               <span>CrossFit</span>
               <ul>
                 <li>Certified Level 3 Trainer</li>
@@ -243,7 +246,7 @@
             </picture>
             <div class="hover-slide__name">Александр Пашков</div>
             <div class="hover-slide__info">
-              <div class="hover-slide__info--name">Александр Пашков</div>
+              <div class="hover-slide__hidden-name">Александр Пашков</div>
               <span>CrossFit</span>
               <ul>
                 <li>Certified Level 3 Trainer</li>
@@ -259,7 +262,7 @@
             </picture>
             <div class="hover-slide__name">Мария Кетова</div>
             <div class="hover-slide__info">
-              <div class="hover-slide__info--name">Мария Кетова</div>
+              <div class="hover-slide__hidden-name">Мария Кетова</div>
               <span>CrossFit</span>
               <ul>
                 <li>Certified Level 3 Trainer</li>
@@ -326,13 +329,13 @@
       <div class="flex-wrapper">
         <div class="promo-block promo-block--stocks">
           <div class="promo-block__info promo-block__info--stocks">
-            <div class="promo-block__info--top">
+            <div class="promo-block__top">
               <div class="promo-block__title">
                 <p>Год</p>4999
               </div>
               <p>Безлимитный абонемент в тренажерный зал</p>
             </div>
-            <div class="promo-block__info--bottom">
+            <div class="promo-block__bottom">
               <a href="#">Подробнее</a>
             </div>
           </div>
@@ -346,20 +349,27 @@
 
         <div class="discounts-block">
           <div class="discounts-item">
-            <div class="discounts-item--top">
+            <div class="discounts-item__top">
               <div class="discounts-item__name">Месяц бесплатно</div>
-              <p>Приведи друга, получи абонемент в подарок</p>
+              <div class="discounts-item__text crop-block">
+                <p>Приведи друга, получи абонемент в подарок. Приведи друга, получи абонемент в подарок. Приведи друга,
+                  получи абонемент в подарок. Приведи друга, получи абонемент в подарок. Приведи друга, получи абонемент
+                  в
+                  подарок. Приведи друга, получи абонемент в подарок. Приведи друга, получи абонемент в подарок. Приведи
+                  друга, получи абонемент в подарок. Приведи друга, получи абонемент в подарок.</div>
             </div>
-            <div class="discounts-item--bottom">
+            <div class="discounts-item__bottom">
               <a href="#" class="">Подробнее</a>
             </div>
           </div>
           <div class="discounts-item">
-            <div class="discounts-item--top">
+            <div class="discounts-item__top">
               <div class="discounts-item__name">Скидка 20%</div>
-              <p>Корпоративный фитнес с командой</p>
+              <div class="discounts-item__text crop-block">
+                <p>Корпоративный фитнес с командой</p>
+              </div>
             </div>
-            <div class="discounts-item--bottom">
+            <div class="discounts-item__bottom">
               <a href="#" class="">Подробнее</a>
             </div>
           </div>
@@ -413,21 +423,25 @@
       <div class="contacts__content">
         <h2>Контакты</h2>
         <div class="contacts-items">
-          <div class="contacts__item">
-            <span>Адрес:</span>
-            <span>г. Омск, ул. 60 лет Октября, 7</span>
+          <div class="contacts-items contacts-items--left">
+            <div class="contacts__item">
+              <span>Адрес:</span>
+              <span>г. Омск, ул. 60 лет Октября, 7</span>
+            </div>
+            <div class="contacts__item">
+              <span>График работы:</span>
+              <span>Пн-Вс: с 8:00 до 22:00</span>
+            </div>
           </div>
-          <div class="contacts__item">
-            <span>График работы:</span>
-            <span>Пн-Вс: с 8:00 до 22:00</span>
-          </div>
-          <div class="contacts__item">
-            <span>Телефон:</span>
-            <a href="tel:88005555555">8-800-555-55-55</a>
-          </div>
-          <div class="contacts__item">
-            <span>Email:</span>
-            <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          <div class="contacts-items contacts-items--right">
+            <div class="contacts__item">
+              <span>Телефон:</span>
+              <a href="tel:88005555555">8-800-555-55-55</a>
+            </div>
+            <div class="contacts__item">
+              <span>Email:</span>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </div>
           </div>
         </div>
       </div>
@@ -437,19 +451,21 @@
 
 <footer class="main-footer">
   <div class="wrapper wrapper-1160">
-    <a class="site-logo main-footer__site-logo">
-      <svg width="89" height="20">
-        <use xlink:href="img/sprite_auto.svg#icon-logo"/>
-      </svg>
-    </a>
+    <div class="adaptive-wrapper">
+      <a class="site-logo main-footer__site-logo">
+        <svg width="89" height="20">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"/>
+        </svg>
+      </a>
 
-    <ul class="main-footer__nav-links">
-      <li class="main-footer__nav-link"><a href="#">Услуги</a></li>
-      <li class="main-footer__nav-link"><a href="#">Абонементы</a></li>
-      <li class="main-footer__nav-link"><a href="#">Акции</a></li>
-      <li class="main-footer__nav-link"><a href="#">Тренеры</a></li>
-      <li class="main-footer__nav-link"><a href="#">Расписание</a></li>
-    </ul>
+      <ul class="main-footer__nav-links">
+        <li class="main-footer__nav-link"><a href="#">Услуги</a></li>
+        <li class="main-footer__nav-link"><a href="#">Абонементы</a></li>
+        <li class="main-footer__nav-link"><a href="#">Акции</a></li>
+        <li class="main-footer__nav-link"><a href="#">Тренеры</a></li>
+        <li class="main-footer__nav-link"><a href="#">Расписание</a></li>
+      </ul>
+    </div>
 
     <div class="social-links main-footer__social-links">
       <a href="#" class="social-links__icon">В контакте

@@ -29,7 +29,7 @@
   &--center {
     width: 240px;
     height: 100%;
-    margin: 10px 69px;
+    margin: 10px 60px;
   }
 
   &--padding-top {
@@ -38,7 +38,7 @@
   }
 
   &--padding-left {
-    padding-left: 25px;
+    padding-left: 16px;
   }
 }
 
@@ -48,7 +48,7 @@
   text-align: center;
   color: #ffffff;
   background: $dark-background;
-  padding: 59px 34px 10px;
+  padding: 52px 34px 10px;
 }
 
 .advantages-item__value {
@@ -106,7 +106,7 @@
 
 @media screen and (max-width: $tablet-width) {
   .advantages-block {
-    padding: 96px 0 56px;
+    padding: 105px 0 56px;
 
     h2 {
       margin-bottom: 44px;
@@ -219,5 +219,17 @@
   .advantages-item__value {
     padding-right: 0;
     padding-bottom: 6px;
+  }
+
+  .advantages-item__content-wrapper {
+    padding: 39px 20px 29px;
+  }
+
+  .advantages-item__text--center {
+    padding: 0;
+
+    span {
+      margin-bottom: 8px;
+    }
   }
 }

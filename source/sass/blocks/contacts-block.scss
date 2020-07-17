@@ -13,7 +13,7 @@
 }
 
 .request__content {
-  padding: 70px 162px 70px 7px;
+  padding: 70px 170px 70px 0;
   max-width: 580px;
   float: right;
 
@@ -43,8 +43,8 @@
 }
 
 .contacts__content {
-  padding: 66px 0 60px 132px;
-  max-width: 594px;
+  padding: 66px 0 60px 120px;
+  max-width: 584px;
 
   h2 {
     margin-bottom: 45px;
@@ -52,9 +52,19 @@
 }
 
 .contacts-items {
-  columns: 2;
-  column-rule: 1px solid #74819c;
-  column-gap: 120px;
+  display: flex;
+  justify-content: space-between;
+
+  &--left,
+  &--right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 63px;
+  }
+
+  &--left {
+    border-right: 1px solid #74819c;
+  }
 }
 
 .contacts__item {
@@ -75,6 +85,7 @@
   }
 
   a {
+    display: block;
     border-bottom: 1px solid transparent;
   }
 
@@ -97,7 +108,7 @@
     max-width: 503px;
     margin: 0 auto;
     float: none;
-    padding: 70px 30px 70px 0;
+    padding: 66px 30px 70px 0;
 
     h2 {
       margin-bottom: 26px;
@@ -115,7 +126,7 @@
   .contacts__content {
     max-width: 575px;
     margin: 0 auto;
-    padding: 70px 0 65px 39px;
+    padding: 70px 0 62px 39px;
 
     h2 {
       margin-bottom: 35px;
@@ -123,7 +134,15 @@
   }
 
   .contacts-items {
-    column-gap: 100px;
+    justify-content: flex-start;
+
+    &--left {
+      padding: 0 46px 0 0;
+    }
+
+    &--right {
+      padding: 0 0 0 46px;
+    }
   }
 
   .contacts__item {
@@ -148,8 +167,8 @@
   }
 
   .request__content {
-    max-width: 450px;
-    padding: 70px 15px;
+    max-width: 442px;
+    padding: 68px 15px 73px;
 
     form {
       label {
@@ -159,15 +178,22 @@
   }
 
   .contacts__content {
-    max-width: 450px;
-    padding: 70px 15px 23px;
+    max-width: 442px;
+    padding: 70px 15px 38px;
+    margin: 0;
   }
 
   .contacts-items {
-    columns: 1;
+    flex-direction: column;
+
+    &--left,
+    &--right {
+      border-right: none;
+      padding: 0;
+    }
   }
 
   .contacts__item {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 }

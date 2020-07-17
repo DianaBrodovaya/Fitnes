@@ -28,7 +28,7 @@
   }
 
   span:not(:last-child) {
-    margin-right: 35px;
+    margin-right: 43px;
   }
 
   span.active {
@@ -40,6 +40,7 @@
 .subscriptions-items {
   display: none;
   justify-content: space-between;
+  flex-wrap: wrap;
   position: relative;
   z-index: 2;
 }
@@ -64,7 +65,7 @@
   &:hover .button {
     color: #ffffff;
     border: none;
-    padding: 24px 45px;
+    padding: 27px 45px;
     background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 }
@@ -82,7 +83,7 @@
 .subscriptions-item__price {
   font: bold 60px/1 "Roboto Condensed", "Arial", sans-serif;
   color: #103aae;
-  margin: -55px 0 48px;
+  margin: -60px 0 48px;
 
   span {
     color: #102654;
@@ -90,13 +91,13 @@
 }
 
 .subscriptions-item__button {
-  padding: 22px 45px;
+  padding: 25px 45px;
 }
 
 @media screen and(max-width: $tablet-width) {
   .subscriptions-block {
     padding: 98px 0 137px;
-    background-position: right -50px bottom;
+    background-position: right -63px bottom;
 
     img {
       bottom: -57px;
@@ -106,7 +107,16 @@
   }
 
   .subscriptions-block__tabs {
-    margin: 0 auto 47px;
+    margin: 5px auto 47px;
+    font-size: 18px;
+
+    span {
+      padding-bottom: 13px;
+    }
+
+    span:not(:last-child) {
+      margin-right: 48px;
+    }
   }
 
   .subscriptions-items {
@@ -136,12 +146,16 @@
     margin: 0 auto 36px;
 
     span {
-      padding: 10px 0;
+      padding: 13px 0;
+
+      &:not(:last-child) {
+        margin-right: 42px;
+      }
     }
   }
 
   .subscriptions-item {
-    padding: 46px 10px;
+    padding: 43px 10px;
 
     h3 {
       font-size: 22px;

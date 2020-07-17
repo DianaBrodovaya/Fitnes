@@ -1,5 +1,5 @@
 .reviews-block {
-  padding: 45px 0 120px;
+  padding: 50px 0 120px;
 
   h2 {
     text-align: center;
@@ -16,12 +16,12 @@
 
 .swiper-button-prev--reviews-slider {
   left: 45px;
-  top: 50%;
+  top: 54%;
 }
 
 .swiper-button-next--reviews-slider {
   right: 45px;
-  top: 50%;
+  top: 54%;
 }
 
 .reviews-slide {
@@ -38,7 +38,6 @@
   float: left;
   width: 110px;
   padding-right: 26px;
-  height: 100%;
 
   img {
     border-radius: 50%;
@@ -90,6 +89,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    align-content: flex-start;
     justify-content: center;
     padding: 40px 25px 25px;
 

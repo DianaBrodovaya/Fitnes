@@ -10,6 +10,11 @@ $(document).ready(function () {
   });
 });
 
+/* Видео */
+$('.video-container').on('click', function () {
+  $('.video-container .video').fadeIn();
+});
+
 /* Табы */
 var jsTriggers = document.querySelectorAll('.js-tab-trigger');
 
@@ -27,6 +32,21 @@ for (var i = 0; i < jsTriggers.length; i++) {
     activeContent.classList.remove('active');
     content.classList.add('active');
   });
+}
+
+/* Обрезка текста */
+function shorten(text, maxLength) {
+  var ret = text;
+  if (ret.length > maxLength) {
+    ret = ret.substr(0, maxLength) + '...';
+  }
+  return ret;
+}
+
+var el = document.querySelectorAll('.crop-block');
+
+for (i = 0; i < el.length; i++) {
+  el[i].innerText = shorten(el[i].innerText, 170);
 }
 
 /* Слайдеры */
@@ -61,6 +81,20 @@ var swiper2 = new Swiper('.swiper-container.reviews-slider', {
     prevEl: '.swiper-button-prev',
   }
 });
+
+/* Одинаковая высота слайдов */
+var slider = swiper2;
+var wrapper = swiper2.wrapperEl;
+
+[].forEach.call(slider.slides, function (slide) {
+  slide.style.height = '';
+});
+
+setTimeout(function () {
+  [].forEach.call(slider.slides, function (slide) {
+    slide.style.height = wrapper.clientHeight + 'px';
+  });
+}, 300);
 
 /* Маска для телефона */
 window.addEventListener('DOMContentLoaded', function () {
