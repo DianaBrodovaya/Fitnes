@@ -15,7 +15,7 @@
 
 .subscriptions-block__tabs {
   display: inline-block;
-  margin: 10px auto 39px;
+  margin: 15px auto 39px;
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -83,7 +83,7 @@
 .subscriptions-item__price {
   font: bold 60px/1 "Roboto Condensed", "Arial", sans-serif;
   color: #103aae;
-  margin: -60px 0 48px;
+  margin: -58px 0 48px;
 
   span {
     color: #102654;
@@ -96,7 +96,7 @@
 
 @media screen and(max-width: $tablet-width) {
   .subscriptions-block {
-    padding: 98px 0 137px;
+    padding: 98px 0 133px;
     background-position: right -63px bottom;
 
     img {

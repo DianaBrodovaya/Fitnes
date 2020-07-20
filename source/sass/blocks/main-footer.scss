@@ -13,7 +13,7 @@
 
 .main-footer__site-logo {
   display: inline-block;
-  margin: 0 265px 0 0;
+  margin: 0 275px 0 0;
 }
 
 .main-footer__nav-link {
@@ -22,7 +22,7 @@
   border-bottom: 1px solid transparent;
 
   &:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 38px;
   }
 
   &:hover {
@@ -59,7 +59,7 @@
 
 @media screen and(max-width: $mobile-width) {
   .main-footer {
-    padding: 44px 0 54px;
+    padding: 48px 0 54px;
 
     .wrapper {
       flex-direction: column;

@@ -34,21 +34,6 @@ for (var i = 0; i < jsTriggers.length; i++) {
   });
 }
 
-/* Обрезка текста */
-function shorten(text, maxLength) {
-  var ret = text;
-  if (ret.length > maxLength) {
-    ret = ret.substr(0, maxLength) + '...';
-  }
-  return ret;
-}
-
-var el = document.querySelectorAll('.crop-block');
-
-for (i = 0; i < el.length; i++) {
-  el[i].innerText = shorten(el[i].innerText, 170);
-}
-
 /* Слайдеры */
 var swiper1 = new Swiper('.swiper-container.trainers-slider', {
   slidesPerView: 4,
